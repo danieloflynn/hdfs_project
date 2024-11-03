@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("ReadFromHDFS").getOrCreate()
 
 # Read the CSV file from HDFS into a DataFrame
-df = spark.read.csv("hdfs://localhost:9000/test/write.csv", header=False, inferSchema=True)
+df = spark.read.csv("hdfs://localhost:9000/test.txt", header=False, inferSchema=True)
 
 # Show the DataFrame content
 df.show()

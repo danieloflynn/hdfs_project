@@ -1,0 +1,5 @@
+docker compose up --build --force-recreate -d
+
+docker cp ./test.txt hdfs_project-namenode-1:/test.txt
+
+hdfs dfs -put /test.txt /test/test.txt

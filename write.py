@@ -9,7 +9,7 @@ columns = ["Name", "Value"]
 df = spark.createDataFrame(data, columns)
 
 # Write the DataFrame to HDFS
-df.write.csv("hdfs://localhost:9000/test/write.csv")
+df.write.csv("hdfs://localhost:9000/test/write7")
 
 # Stop the Spark session
 spark.stop()

@@ -27,7 +27,7 @@
     </property>
     <property>
         <name>dfs.replication</name>
-        <value>3</value>
+        <value>1</value>
     </property>
     <property>
         <!-- frequency the namenode checks the heartbeat messages -->
@@ -37,7 +37,7 @@
     <property>
         <!-- frequency the datanode sends heartbeat messages -->
         <name>dfs.heartbeat.interval</name>
-        <value>3</value> <!-- 3 seconds -->
+        <value>3000</value> <!-- 3 seconds -->
     </property>
     <property>
         <!-- time since last heartbeat node is marked as dead -->
