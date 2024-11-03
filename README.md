@@ -16,7 +16,7 @@ One it's running you can check check out the dashboard here: http://localhost:98
 
 2. To set the necessary folders and write permissions (`write.py` will fail otherwise), run: 
 
-`bash init-dhfs.sh`
+`bash init-hdfs.sh`
 
 3. Sort your Python environment ya' filthy animal
 
@@ -43,7 +43,7 @@ Because many nodes need access to the same config those are saved as a volume at
 ## Resiliency
 Have a little fun, run:
 
-`docker stop cc_med-datanode1-1`
+`docker stop hdfs_project-datanode1-1`
 
 I've set the heartbeat timeouts to be super short, see `/config/hdfs-site.xml`
 
